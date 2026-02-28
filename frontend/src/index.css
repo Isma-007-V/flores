@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }  
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.spin{
+    animation: spin 40s linear infinite;
+}
+
+/* Establece el tamaño de las secciones */
+.div-tab {
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  height: 200px; /* Ajusta la altura según tus necesidades */
+  overflow: hidden; /* Oculta el desbordamiento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ajusta el tamaño de las imágenes */
+.grid img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
